@@ -1,5 +1,5 @@
 site_name: Productive K3S Addons
-site_description: Public add-on and stack source documentation for Productive K3S.
+site_description: Curated add-on and stack documentation for Productive K3S.
 site_author: Productive K3S Addons
 site_url: https://addons.productive-k3s.io/
 repo_url: https://github.com/productive-k3s/productive-k3s-addons
@@ -16,6 +16,7 @@ theme:
   features:
     - navigation.tabs
     - navigation.indexes
+    - navigation.path
     - navigation.sections
     - navigation.expand
     - navigation.footer
@@ -80,11 +81,11 @@ nav:
           - Relación con Core y Addons Pro: es/product/relationship.md
       - Documentación para usuarios:
           - es/user-docs/index.md
-          - Targets de Make: es/user-docs/make-targets.md
+          - Objetivos de Make: es/user-docs/make-targets.md
       - Documentación para desarrolladores:
           - es/developer-docs/index.md
           - Organización del proyecto: es/developer-docs/guides/project-layout.md
-          - Tests y matriz: es/developer-docs/guides/testing-and-matrix.md
+          - Pruebas y matriz: es/developer-docs/guides/testing-and-matrix.md
 
 extra:
   social:
