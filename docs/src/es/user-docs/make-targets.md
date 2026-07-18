@@ -1,4 +1,6 @@
-# Targets de Make
+# Objetivos De Make
+
+Estos comandos son principalmente para validación y mantenimiento del repositorio, no para la primera comprensión a nivel producto del catálogo de addons.
 
 Comandos de validación a nivel repositorio:
 

@@ -1,5 +1,7 @@
 # Make targets
 
+These commands are mostly for repository validation and maintenance, not for the first product-level understanding of the addon catalog.
+
 Repository-level commands:
 
 ```bash

@@ -1,11 +1,13 @@
 # Productive K3S Addons
 
-`productive-k3s-addons` is the public Kubernetes content repository for the Productive K3S ecosystem.
+`productive-k3s-addons` is where the curated cluster extensions of Productive K3S live.
+
+If you want ready-to-use packages that extend the base cluster with additional capabilities, start here.
 
 It is intentionally separate from `productive-k3s-core`:
 
-- `productive-k3s-core` is the package execution engine.
-- `productive-k3s-addons` contains source content.
+- `productive-k3s-core` installs and validates packaged addons and stacks.
+- `productive-k3s-addons` defines the public curated packages.
 - `productive-k3s-addons-pro` mirrors the same structure for private or commercial content.
 
 This repository now carries two different kinds of content:
@@ -13,7 +15,15 @@ This repository now carries two different kinds of content:
 - `addons/`: individually deployable capabilities
 - `stacks/`: opinionated collections of add-ons
 
-Core must remain valid without any predefined stack. This repository is where stack intent and add-on source packages live.
+Core must remain valid without any predefined stack. This repository is where stack intent and add-on packages live.
+
+Typical examples include cluster capabilities such as:
+
+- certificates
+- storage
+- registry
+- management surfaces
+- ingress-facing application extensions
 
 ## Public exposure boundary
 
@@ -102,7 +112,7 @@ Contains additional documentation for the addon ecosystem.
 
 This can include:
 
-- addon authoring guidelines
+- addon maintenance guidelines
 - maturity levels
 - contribution rules
 - installation patterns
@@ -112,7 +122,7 @@ This can include:
 
 ### `tests/`
 
-Contains repository-level validation and cross-testing entrypoints.
+Contains repository-level validation and cross-testing surfaces.
 
 Current workflow:
 
@@ -161,7 +171,7 @@ In the future, it may expose commands to discover or install addons.
 
 ## Status
 
-This repository is now the source of truth for public add-ons and stacks, including the `base` stack and the add-on-level host impact metadata consumed by Core.
+This repository is the public curated package layer for add-ons and stacks, including the `base` stack and the add-on-level host impact metadata consumed by Core.
 
 ## License
 

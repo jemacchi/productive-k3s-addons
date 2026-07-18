@@ -1,7 +1,9 @@
 # Product
 
-This repository owns source content, not the runtime engine.
+This repository is the curated package layer for extending a Productive K3S cluster.
 
-- `productive-k3s-core` installs and validates packages
-- `productive-k3s-addons` defines public add-ons and stacks
-- `productive-k3s-addons-pro` mirrors the same contract for private/commercial content
+Use it when you want ready-to-use cluster capabilities rather than assembling every extension by hand.
+
+Examples include management, storage, ingress, registry, and certificate-related packages.
+
+`productive-k3s-core` remains the layer that installs and validates those packages, while `productive-k3s-addons` owns the curated public catalog of add-ons and stacks.

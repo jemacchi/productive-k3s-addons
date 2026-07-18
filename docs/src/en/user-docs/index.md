@@ -1,3 +1,7 @@
 # User docs
 
-This site mainly documents source authoring and repository-level validation. End users normally consume packaged artifacts through `pk3s` and `productive-k3s-core`.
+This section explains how to consume the curated addon and stack layer.
+
+In the normal user-facing flow, operators install those packages through `pk3s` or `productive-k3s-core`.
+
+Repository-level authoring and validation still matter, but they are secondary to the idea that this repository provides ready-to-use cluster extensions.
