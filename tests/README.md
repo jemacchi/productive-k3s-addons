@@ -11,6 +11,12 @@ Current levels:
 - `contract`: validation against a selected `productive-k3s-core` engine
 - `live`: manual package-first install checks
 
+Selector note:
+
+- `ADDON=<name>` and `STACK=<name>` select which catalog entry to validate from this repository
+- they do not imply that `productive-k3s-core` installs public add-ons by source name
+- the live `core` add-on contract remains `addon install --tgz <artifact>`
+
 Use the root entrypoints for the main flows:
 
 ```bash

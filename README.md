@@ -141,6 +141,12 @@ Detailed targets live under `tests/`:
 - `make -C tests test-clean-vms`
 - `make -C tests test-clean-artifacts`
 
+Important contract split:
+
+- in this repository, `ADDON=<name>` and `STACK=<name>` are test selectors for validating catalog content
+- in `productive-k3s-core`, public add-on installation is package-first and consumes a packaged `.tgz` artifact
+- `core` may still install a named stack such as `base`, but add-on source-name installation is not part of the public `core` contract
+
 Cross-testing follows the same pattern used by `productive-k3s-profiles`:
 
 - if `PRODUCTIVE_K3S_CORE_REPO_DIR` is set, the runner uses that local checkout
@@ -156,6 +162,7 @@ During coordinated development of new stack contracts, prefer `CORE_VERSION=deve
 Provides the package runtime, installation logic, validation, and cluster lifecycle.
 
 This repository should not depend on `productive-k3s-addons` as source content.
+It consumes packaged add-on artifacts for public add-on installation and treats this repository as the source catalog that produces those artifacts.
 
 ### `productive-k3s-infra`
 
