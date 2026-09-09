@@ -24,6 +24,7 @@ Typical examples include cluster capabilities such as:
 - registry
 - management surfaces
 - ingress-facing application extensions
+- cluster health and upgrade-readiness checks
 
 ## Public exposure boundary
 
@@ -95,6 +96,19 @@ The first stack exported from this repository is `stacks/base`, which declarativ
 - `longhorn`
 - `rancher`
 - `registry`
+
+The `stacks/cluster-health` stack adds the first public operations-readiness slice:
+
+- `popeye`
+- `kubent`
+
+The next public stacks add security, GitOps, database, and geospatial paths:
+
+- `cluster-security`: `trivy-operator`, `kyverno`
+- `production-readiness`: `popeye`, `kubent`, `trivy-operator`, `kyverno`
+- `gitops`: `cert-manager`, `argocd`
+- `database`: `longhorn`, `cloudnative-pg`
+- `geospatial`: `geoserver-cloud`
 
 ### `scripts/`
 
